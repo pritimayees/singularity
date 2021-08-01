@@ -1,3 +1,21 @@
+Install GO
+-----------
+
 sudo apt-get update
-sudo apt-cache search ^golang
-sudo apt-get install golang-1.16-go 
+sudo snap install go --classic
+
+Install Singularity
+-------------------
+https://sylabs.io/guides/3.0/user-guide/installation.html
+
+sudo apt-get update && sudo apt-get install -y build-essential libssl-dev uuid-dev libgpgme11-dev squashfs-tools libseccomp-dev pkg-config
+sudo apt-get -f install
+
+
+git clone https://github.com/sylabs/singularity.git
+cd singularity
+./mconfig --prefix=/opt/singularity
+cd builddir
+make
+
+
