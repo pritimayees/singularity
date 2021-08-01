@@ -1,0 +1,20 @@
+#go to
+https://quay.io/
+
+search fastqc
+click on: biocontainers/fastqc
+
+click on TAGS
+Click on Fetch tag and select docker pull by tag
+copy from quay.io/biocontainers/fastqc:0.11.9--hdfd78af_1
+singularity pull fastqc_0.11.9.sif docker://quay.io/biocontainers/fastqc:0.11.9--hdfd78af_1
+
+cd ~/tools
+pwd
+/home/aditi/tools
+copy /home/aditi/tools
+
+nano ~/.bashrc
+go to the last line of file
+append:  PATH=$PATH:/home/aditi/tools
+ctrl x
