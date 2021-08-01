@@ -14,8 +14,9 @@ sudo apt-get -f install
 
 git clone https://github.com/sylabs/singularity.git
 cd singularity
-./mconfig --prefix=/opt/singularity
-cd builddir
-make
+./mconfig && \
+make -C ./builddir && \
+sudo make -C ./builddir install
+
 
 
